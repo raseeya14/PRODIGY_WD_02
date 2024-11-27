@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stopwatch-app">
+    <header>
+      <h1>Advanced Stopwatch</h1>
+      <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    </header>
+
+    <main>
+      <div id="time-display" role="timer" aria-live="polite">00:00:00.00</div>
+      <div class="buttons">
+        <button id="start" aria-label="Start">Start</button>
+        <button id="pause" aria-label="Pause">Pause</button>
+        <button id="reset" aria-label="Reset">Reset</button>
+        <button id="lap" aria-label="Lap">Lap</button>
+      </div>
+      <div id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      <ul id="laps" aria-label="Lap Times"></ul>
+    </main>
+
+    <footer>
+      <p>Press "S" for Start, "P" for Pause, "R" for Reset, and "L" for Lap.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
